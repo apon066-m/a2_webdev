@@ -7,3 +7,4 @@ updated the about.html with basic points
 updated the contact.html with basic points
 updated the services.html with basic points
 put more details for the html files
+added images
