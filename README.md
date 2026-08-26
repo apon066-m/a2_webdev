@@ -11,3 +11,4 @@ added images
 put more content details
 start updating css & js 
 added responsive navigation
+added styling for homepage, service & team
