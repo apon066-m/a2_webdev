@@ -10,3 +10,4 @@ put more details for the html files
 added images
 put more content details
 start updating css & js 
+added responsive navigation
