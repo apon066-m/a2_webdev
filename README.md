@@ -14,3 +14,4 @@ added responsive navigation
 added styling for homepage, service & team
 added styling for about and contact form
 added frequently asked questions
+added java script dom interactions
