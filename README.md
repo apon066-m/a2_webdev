@@ -13,3 +13,4 @@ start updating css & js
 added responsive navigation
 added styling for homepage, service & team
 added styling for about and contact form
+added frequently asked questions
