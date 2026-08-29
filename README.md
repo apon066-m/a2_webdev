@@ -16,3 +16,4 @@ added styling for about and contact form
 added frequently asked questions
 added java script dom interactions
 updated form validation
+added more designs
