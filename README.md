@@ -19,3 +19,4 @@ updated form validation
 added more designs
 updated the dark mode theme with pseudo class
 fixed some minor mistakes
+fixed the github file and folder like root folder
