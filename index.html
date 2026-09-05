@@ -1,144 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KP Clinic</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-<div class="topbar">
-  <p>Follow us: <a href="xxx">Facebook</a></p>
-  <p>Call us: (02) 1234 0000</p>
-</div>
-
-<header>
-    <h1>KP Clinic</h1>
-    <button class="menu-btn" onclick="toggleMenu()">Menu</button>
-    <nav>
-        <ul id="nav-menu" class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html#team">Team</a></li>
-            <li><a href="contact.html#faq">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <button class="theme-btn" onclick="toggleTheme()">Dark Mode</button>
-</header>
-
-<main>
-
-<section class="hero">
-    <div class="hero-text">
-        <h2>KP Clinic</h2>
-        <p>We are always here to care</p>
-        <a href="contact.html" class="btn">Book an Appointment</a>
-    </div>
-
-    <div class="hero-image">
-        <img src="images/stetho.jpg" alt="Stethoscope">
-    </div>
-</section>
-
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="card-grid">
-        <div class="card">
-            <img src="images/s1.jpg" alt="Women's Health">
-            <h3>Women's Health</h3>
-            <p>We have Gynecology Service that includes women's health routine check-ups,
-                reproductive health and all other care related to gynecology .</p>
+    <input type="checkbox" id="dark-mode" onchange="saveTheme()">
+    <div class="page">
+        <div class="topbar">
+            <p>Follow us: <a href="https://www.facebook.com/share/1ErBms7H68/">Facebook</a></p>
+            <p>Call us: (02) 1234 0000</p>
         </div>
-        <div class="card">
-            <img src="images/s2.jpg" alt="Child Care">
-            <h3>Child Care</h3>
-            <p>Our Pediatrics Service is mainly for babies.
-                Their regular check-ups, common illness and emergency care.
-            </p>
-        </div>
-        <div class="card">
-            <img src="images/s3.png" alt="General Medicine">
-            <h3>General Medicine</h3>
-            <p>Our Medicine care is for the whole community.
-                We are also always here for all types of general problem consultations.
-            </p>
-        </div>
-        <div class="card">
-            <img src="images/s4.png" alt="Suegery">
-            <h3>Surgey</h3>
-            <p>Our this services has surgical consultations and application.
-                We also provide special care and operations for critical patients.
-            </p>
-        </div>
-    </div>
-</section>
 
-<section class="doctors">
-    <h2>Our Doctors</h2>
-    <div class="card-grid">
-        <div class="card">
-            <img src="images/D1.png" alt="Dr Rutbah Naufat">
-            <h3>Dr Rutbah Naufat</h3>
-            <p>Surgeon</p>
-        </div>
-        <div class="card">
-            <img src="images/D2.jpg" alt="Dr Sharaban Tohura">
-            <h3>Dr Sharaban Tohura</h3>
-            <p>Gynecologist</p>
-        </div>
-        <div class="card">
-            <img src="images/D3.png" alt="Dr Maisha Islam">
-            <h3>Dr Maisha Islam</h3>
-            <p>Pediatrician</p>
-        </div>
-        <div class="card">
-            <img src="images/D4.png" alt="Dr Raisa Mehzabin">
-            <h3>Dr Raisa Mehzabin</h3>
-            <p>Medicine Specialist</p>
-        </div>
-    </div>
-</section>
+        <header>
+            <h1>KP Clinic</h1>
+            <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+            <nav>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html#team">Team</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="dark-mode" class="theme-btn">Dark Mode</label>
+        </header>
 
-<section class="location">
-    <h2>Our Location</h2>
-    <p>Location: 12 X Street, Gungahlin, ACT 2600</p>
-    <p>Opening Hours: Mon-Fri 8am-6pm, Sat 9am-1pm</p>
-    <p>Phone: (02) 1234 5678</p>
-    <div class="map">
-        <iframe src="https://maps.app.goo.gl/FhPdMMQNC29pQc2u6" width="100%" height="300"></iframe>
-    </div>
-</section>
+        <main>
 
-</main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>KP Clinic</h2>
+                    <p>We are always here to care</p>
+                    <a href="contact.html" class="btn">Book an Appointment</a>
+                </div>
 
-<footer>
-    <div class="footer-col">
-        <h3>Other Locations &amp; Contact</h3>
-        <p>See all KP Clinic locations near you.</p>
-    </div>
-    <div class="footer-col">
-        <h3>Medical Centre Services</h3>
-        <p>Consultations, operations, general health check-up..</p>
-    </div>
-    <div class="footer-col">
-        <h3>Emergency Services</h3>
-        <p>For emergencies, always call 000.</p>
-    </div>
-    <div class="footer-col">
-        <h3>Request More Info</h3>
-        <form onsubmit="return validateEmail()">
-            <label for="footer-email">Email:</label>
-            <input type="email" id="footer-email" name="email">
-            <button type="submit">Send</button>
-        </form>
-        <p id="footer-error"></p>
-    </div>
-    <p>&copy; 2026 KP Clinic</p>
-</footer>
+                <div class="hero-image">
+                    <img src="images/stetho.jpg" alt="Stethoscope">
+                </div>
+            </section>
 
-<script src="js/script.js"></script>
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/s1.jpg" alt="Women's Health">
+                        <h3>Women's Health</h3>
+                        <p>We have Gynecology Service that includes women's health routine check-ups,
+                            reproductive health and all other care related to gynecology .</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/s2.jpg" alt="Child Care">
+                        <h3>Child Care</h3>
+                        <p>Our Pediatrics Service is mainly for babies.
+                            Their regular check-ups, common illness and emergency care.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="images/s3.png" alt="General Medicine">
+                        <h3>General Medicine</h3>
+                        <p>Our Medicine care is for the whole community.
+                            We are also always here for all types of general problem consultations.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="images/s4.png" alt="Surgery">
+                        <h3>Surgery</h3>
+                        <p>Our this services has surgical consultations and application.
+                            We also provide special care and operations for critical patients.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doctors">
+                <h2>Our Doctors</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="images/D1.png" alt="Dr Rutbah Naufat">
+                        <h3>Dr Rutbah Naufat</h3>
+                        <p>Surgeon</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/D2.jpg" alt="Dr Sharaban Tohura">
+                        <h3>Dr Sharaban Tohura</h3>
+                        <p>Gynecologist</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/D3.png" alt="Dr Maisha Islam">
+                        <h3>Dr Maisha Islam</h3>
+                        <p>Pediatrician</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/D4.png" alt="Dr Raisa Mehzabin">
+                        <h3>Dr Raisa Mehzabin</h3>
+                        <p>Medicine Specialist</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="location">
+                <h2>Our Location</h2>
+                <p>Location: 12 X Street, Gungahlin, ACT 2600</p>
+                <p>Opening Hours: Mon-Fri 8am-6pm, Sat-Sun 9am-1pm, Public Holiday 9am-12pm</p>
+                <p>Phone: (02) 1234 0000</p>
+                <div class="map">
+                    <img src="images/map.png" alt="Map showing KP Clinic location">
+                    <a href="https://maps.app.goo.gl/R46LpCLrN3Pozbty6" target="_blank">View on Google Maps</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-col">
+                <h3>Other Locations &amp; Contact</h3>
+                <p>Visit our second clinic in Fyshwick.</p>
+                <a href="https://maps.app.goo.gl/D6MYhFrCGsMSfJWT7" target="_blank">View on map</a>
+
+            </div>
+            <div class="footer-col">
+                <h3>Medical Centre Services</h3>
+                <p>Consultations, operations, general health check-up.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Emergency Services</h3>
+                <p>For emergencies, always call 000.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Request More Info</h3>
+                <form onsubmit="return validateEmail()">
+                    <label for="footer-email">Email:</label>
+                    <input type="email" id="footer-email" name="email">
+                    <button type="submit">Send</button>
+                </form>
+                <p id="footer-error"></p>
+            </div>
+            <p>&copy; 2026 KP Clinic</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
