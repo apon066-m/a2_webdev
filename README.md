@@ -17,3 +17,4 @@ added frequently asked questions
 added java script dom interactions
 updated form validation
 added more designs
+updated the dark mode theme with pseudo class
