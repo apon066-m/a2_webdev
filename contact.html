@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us -> KP Clinic</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<div class="topbar">
-  <p>Follow us: <a href="xxx">Facebook</a></p>
-  <p>Call us: (02) 1234 0000</p>
+    <input type="checkbox" id="dark-mode" onchange="saveTheme()">
+    <div class="page">
+        <div class="topbar">
+            <p>Follow us: <a href="https://www.facebook.com/share/1ErBms7H68/">Facebook</a></p>
+            <p>Call us: (02) 1234 0000</p>
+        </div>
 
-</div>
+        <header>
+            <h1>KP Clinic</h1>
+            <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+            <nav>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html#team">Team</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="dark-mode" class="theme-btn">Dark Mode</label>
+        </header>
 
-<header>
-  <h1>KP Clinic</h1>
-  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
-  <nav>
-      <ul id="nav-menu" class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="about.html#team">Team</a></li>
-        <li><a href="contact.html#faq">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-  </nav>
-  <button class ="theme-btn" onclick="toggleTheme()">Dark Mode</button>
-</header>
+        <main>
 
-<main>
+            <section class="page-intro">
+                <h2>Contact Us</h2>
+                <p>Approach us easily: send a message or request booking.</p>
 
-    <section class="page-intro">
-      <h1>Contact Us</h1>
-      <p>Approach us easily: send a message or request booking.</p>
+                <form onsubmit="return validateForm()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p id="error"></p>
+            </section>
 
-        <button type="submit">Send</button>
-      </form>
-      <p id="error"></p>
-    </section>
+            <section id="faq" class="faq">
+                <h2>Frequently Asked Questions</h2>
 
-<section id="faq" class="faq">
-    <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)">How can I book an appointment?</button>
+                    <p class="faq-answer">You can book the appointment simply by filling up the form. You can also call
+                        us or visit us offline.</p>
+                </div>
 
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">How can I book an appointment?</button>
-        <p class="faq-answer">You can book the appointment simply by filling up the form. You can also call us or visit us offline.</p>
-    </div>
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)">Do you accept walk-ins?</button>
+                    <p class="faq-answer">Yes, we accept walk-ins where possible, though booked appointments are seen
+                        first.</p>
+                </div>
 
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">Do you accept walk-ins?</button>
-        <p class="faq-answer">Yes, we accept walk-ins where possible, though booked appointments are seen first.</p>
-    </div>
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)">Do you have any membership option?</button>
+                    <p class="faq-answer">Once you register in our system at offline, you will keep getting updates. We
+                        don't have any membership facilities</p>
+                </div>
 
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">Do you have any membership option?</button>
-        <p class="faq-answer">Once you register in our system at offline, you will keep getting updates. We don't any membership facilities</p>
-    </div>
+                <div class="faq-item">
+                    <button onclick="toggleFAQ(this)">Do I need to make payment for appointments before?</button>
+                    <p class="faq-answer">You can pay in advance, also you can pay after the visit.</p>
+                </div>
+            </section>
 
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">Do I need to make payment for appointments before?</button>
-        <p class="faq-answer">You can pay in advance, also you can pay after the visit.</p>
-    </div>
-</section>
+        </main>
 
-</main>
+        <footer>
+            <div class="footer-col">
+                <h3>Other Locations &amp; Contact</h3>
+                <p>Visit our second clinic in Fyshwick.</p>
+                <a href="https://maps.app.goo.gl/D6MYhFrCGsMSfJWT7" target="_blank">View on map</a>
 
-<footer>
-    <div class="footer-col">
-        <h3>Other Locations &amp; Contact</h3>
-        <p>See all KP Clinic locations near you.</p>
-    </div>
-    <div class="footer-col">
-        <h3>Medical Centre Services</h3>
-        <p>Consultations, operations, general health check-up..</p>
-    </div>
-    <div class="footer-col">
-        <h3>Emergency Services</h3>
-        <p>For emergencies, always call 000.</p>
-    </div>
-    <div class="footer-col">
-        <h3>Request More Info</h3>
-        <form onsubmit="return validateEmail()">
-            <label for="footer-email">Email:</label>
-            <input type="email" id="footer-email" name="email">
-            <button type="submit">Send</button>
-        </form>
-        <p id="footer-error"></p>
-    </div>
-    <p>&copy; 2026 KP Clinic</p>
-</footer>
+            </div>
+            <div class="footer-col">
+                <h3>Medical Centre Services</h3>
+                <p>Consultations, operations, general health check-up.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Emergency Services</h3>
+                <p>For emergencies, always call 000.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Request More Info</h3>
+                <form onsubmit="return validateEmail()">
+                    <label for="footer-email">Email:</label>
+                    <input type="email" id="footer-email" name="email">
+                    <button type="submit">Send</button>
+                </form>
+                <p id="footer-error"></p>
+            </div>
+            <p>&copy; 2026 KP Clinic</p>
+        </footer>
 
-<script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 </body>
+
 </html>
