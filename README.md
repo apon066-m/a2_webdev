@@ -1,4 +1,4 @@
-# a2_webdev
+# project_kp_clinic
  Modern Front-End Web Interface Development
 initial structure created
 html structure for four pages
