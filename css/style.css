@@ -21,6 +21,19 @@ body {
     margin-right: 10px;
 }
 
+/*stetho-image*/
+.hero {
+    background: #004d66;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 250px;
+    margin-top: 20px;
+}
+
 /* header design and navi */
 header {
     background: #004d66;
@@ -124,7 +137,6 @@ section h2 {
 
 .card {
     border: 1px solid #b8dce8;
-    border-top: 4px solid #1e88e5;
     padding: 15px;
     width: 220px;
     text-align: center;
@@ -153,6 +165,10 @@ section h2 {
 
 .doctors {
     background: #708eb3;
+}
+
+.card {
+    border-top: 4px solid #1e88e5;
 }
 
 section h2 {
